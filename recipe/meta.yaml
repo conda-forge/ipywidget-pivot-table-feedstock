@@ -1,13 +1,13 @@
-{% set version = "0.1.3a0" %}
-{% set sha256 = "cb04049712197b4fd85f370610d3e2f1caa2ff24ea664ea6e0218308c6220175" %}
+{% set version = "0.2.3b0" %}
+{% set sha256 = "bd31b95173c6a8f2122116cef7818c955454926aa24211ab74a6c5053bdd009f" %}
 
 package:
-  name: ipywidget-pivot-table
+  name: ipypivot
   version: {{ version }}
 
 source:
-  fn: ipywidget-pivot-table-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/i/ipywidget_pivot_table/ipywidget_pivot_table-{{ version }}.tar.gz
+  fn: ipypivot-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/i/ipypivot/ipypivot-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -29,10 +29,10 @@ requirements:
 
 test:
     imports:
-        - ipywidget_pivot_table
+        - ipypivot
 
 about:
-  home: https://github.com/PierreMarion23/pivot-table-widget
+  home: https://github.com/PierreMarion23/ipypivot
   license: MIT
   license_family: MIT
   summary: 'A jupyter widget (or ipywidget) wrapping the very convenient pivotTable.js library'
@@ -40,7 +40,7 @@ about:
   description: |
     This is a jupyter widget (or ipywidget) wrapping the very convenient pivotTable.js library.
     It enables to display and embed a pivotTable in a Jupyter notebook in a few Python lines.
-  dev_url: https://github.com/oscar6echo/jupyter-widget-pivot-table
+  dev_url: https://github.com/PierreMarion23/ipypivot
 
 extra:
   recipe-maintainers:
